@@ -59,6 +59,7 @@ public class HystrixDemoService {
         return new User(-1L, user.getName());
     }
 
+
     /**
      * 清除请求缓存
      *
