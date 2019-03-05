@@ -1,0 +1,5 @@
+/Users/zhangwen/learn/code/microservice-project/spring-application/src/main/java/com/spring/microservice/microserviceproject/domain/User.java
+/Users/zhangwen/learn/code/microservice-project/spring-application/src/main/java/com/spring/microservice/microserviceproject/config/WebMvcConfig.java
+/Users/zhangwen/learn/code/microservice-project/spring-application/src/main/java/com/spring/microservice/microserviceproject/http/message/PropertiesHttpMessageConverter.java
+/Users/zhangwen/learn/code/microservice-project/spring-application/src/main/java/com/spring/microservice/microserviceproject/controller/HttpMessageConverterController.java
+/Users/zhangwen/learn/code/microservice-project/spring-application/src/main/java/com/spring/microservice/microserviceproject/MicroserviceProjectApplication.java

@@ -1,0 +1,5 @@
+com/spring/microservice/microserviceproject/http/message/PropertiesHttpMessageConverter.class
+com/spring/microservice/microserviceproject/domain/User.class
+com/spring/microservice/microserviceproject/MicroserviceProjectApplication.class
+com/spring/microservice/microserviceproject/config/WebMvcConfig.class
+com/spring/microservice/microserviceproject/controller/HttpMessageConverterController.class
