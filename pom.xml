@@ -16,6 +16,9 @@
         <module>spring-service-api</module>
         <module>spring-cloud-hystrix-demo</module>
         <module>spring-cloud-hystrix-dashboard-demo</module>
+        <module>spring-cloud-feign-common-api</module>
+        <module>spring-cloud-feign-consumer-demo</module>
+        <module>spring-cloud-feign-provider-demo</module>
     </modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
