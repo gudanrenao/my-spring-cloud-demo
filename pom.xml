@@ -21,6 +21,9 @@
         <module>spring-cloud-feign-provider-demo</module>
         <module>spring-cloud-zuul-demo</module>
         <module>spring-cloud-zuul-dynamic-demo</module>
+        <module>spring-boot-rabbitmq-demo</module>
+        <module>spring-cloud-gateway-demo</module>
+        <module>spring-cloud-gateway-custom-servlet</module>
     </modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -68,6 +71,21 @@
                 <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
                 <version>${spring-cloud-version}</version>
                 <!--<scope>import</scope>-->
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-bus-amqp</artifactId>
+                <version>${spring-cloud-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-gateway</artifactId>
+                <version>${spring-cloud-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+                <version>${spring-cloud-version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
