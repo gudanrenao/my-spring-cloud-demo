@@ -24,6 +24,8 @@
         <module>spring-boot-rabbitmq-demo</module>
         <module>spring-cloud-gateway-demo</module>
         <module>spring-cloud-gateway-custom-servlet</module>
+        <module>spring-cloud-stream-demo</module>
+        <module>spring-boot-security-oauth2-demo</module>
     </modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -41,52 +43,61 @@
 	<properties>
 		<java.version>1.8</java.version>
 		<project>0.0.1-SNAPSHOT</project>
-        <spring-cloud-version>2.1.0.RELEASE</spring-cloud-version>
+        <spring-cloud-version>2.1.1.RELEASE</spring-cloud-version>
 	</properties>
 
 
     <dependencyManagement>
         <dependencies>
+            <!--<dependency>-->
+                <!--<groupId>org.springframework.cloud</groupId>-->
+                <!--<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>-->
+                <!--<version>${spring-cloud-version}</version>-->
+                <!--&lt;!&ndash;<scope>import</scope>&ndash;&gt;-->
+            <!--</dependency>-->
+            <!--<dependency>-->
+                <!--<groupId>org.springframework.cloud</groupId>-->
+                <!--<artifactId>spring-cloud-starter-config</artifactId>-->
+                <!--&lt;!&ndash;<artifactId>spring-cloud-dependencies</artifactId>&ndash;&gt;-->
+                <!--<version>${spring-cloud-version}</version>-->
+                <!--&lt;!&ndash;<scope>import</scope>&ndash;&gt;-->
+            <!--</dependency>-->
+            <!--<dependency>-->
+                <!--<groupId>org.springframework.cloud</groupId>-->
+                <!--<artifactId>spring-cloud-config-server</artifactId>-->
+                <!--<version>${spring-cloud-version}</version>-->
+                <!--&lt;!&ndash;<scope>import</scope>&ndash;&gt;-->
+            <!--</dependency>-->
+            <!--<dependency>-->
+                <!--<groupId>org.springframework.cloud</groupId>-->
+                <!--<artifactId>spring-cloud-starter-netflix-zuul</artifactId>-->
+                <!--<version>${spring-cloud-version}</version>-->
+                <!--&lt;!&ndash;<scope>import</scope>&ndash;&gt;-->
+            <!--</dependency>-->
+            <!--<dependency>-->
+                <!--<groupId>org.springframework.cloud</groupId>-->
+                <!--<artifactId>spring-cloud-starter-bus-amqp</artifactId>-->
+                <!--<version>${spring-cloud-version}</version>-->
+            <!--</dependency>-->
+            <!--<dependency>-->
+                <!--<groupId>org.springframework.cloud</groupId>-->
+                <!--<artifactId>spring-cloud-starter-gateway</artifactId>-->
+                <!--<version>${spring-cloud-version}</version>-->
+            <!--</dependency>-->
+            <!--<dependency>-->
+                <!--<groupId>org.springframework.cloud</groupId>-->
+                <!--<artifactId>spring-cloud-starter-netflix-hystrix</artifactId>-->
+                <!--<version>${spring-cloud-version}</version>-->
+            <!--</dependency>-->
+
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-                <version>${spring-cloud-version}</version>
-                <!--<scope>import</scope>-->
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Greenwich.SR1</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-starter-config</artifactId>
-                <!--<artifactId>spring-cloud-dependencies</artifactId>-->
-                <version>${spring-cloud-version}</version>
-                <!--<scope>import</scope>-->
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-config-server</artifactId>
-                <version>${spring-cloud-version}</version>
-                <!--<scope>import</scope>-->
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
-                <version>${spring-cloud-version}</version>
-                <!--<scope>import</scope>-->
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-starter-bus-amqp</artifactId>
-                <version>${spring-cloud-version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-starter-gateway</artifactId>
-                <version>${spring-cloud-version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
-                <version>${spring-cloud-version}</version>
-            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
