@@ -24,6 +24,7 @@ public class UserController implements UserService {
 
     @Override
     public String hello() {
+        logger.error("provider hello execute......");
         return "hello,world!!!";
     }
 

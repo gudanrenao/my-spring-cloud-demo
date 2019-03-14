@@ -6,7 +6,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
- * @Description
+ * @Description feign hystrix sleuth
+ * todo: zipkin maven error
  * @Author ZWen
  * @Date 2019/3/7 12:28 AM
  * @Version 1.0

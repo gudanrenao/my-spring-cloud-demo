@@ -26,6 +26,8 @@
         <module>spring-cloud-gateway-custom-servlet</module>
         <module>spring-cloud-stream-demo</module>
         <module>spring-boot-security-oauth2-demo</module>
+        <module>spring-boot-security-demo</module>
+        <module>spring-boot-zipkin-server-demo</module>
     </modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>

@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
+
 /**
  * @Description
  * @Author ZWen
@@ -50,5 +52,12 @@ public class FeignDemoController {
     @GetMapping("/errorDemo")
     public String errorDemo(){
         throw new RuntimeException("test error");
+    }
+
+    @GetMapping("/hello")
+    public String hello(HttpServletRequest request){
+        String hello = userServiceFeign.hello();
+        logger.error("consumer hello execute, response[{}]",hello);
+        return "from provider : " + hello;
     }
 }
